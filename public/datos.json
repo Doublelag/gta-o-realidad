@@ -879,5 +879,380 @@
    "https://en.wikipedia.org/wiki/Los_Angeles"
   ],
   "confianza": "media"
+ },
+ {
+  "id": "hakuchou-vel",
+  "cat": "velocidad",
+  "unidad": "km/h",
+  "pregunta": "¿Cuál corre más?",
+  "gta": {
+   "nombre": "Shitzu Hakuchou",
+   "juego": "GTA V",
+   "valor": 216
+  },
+  "real": {
+   "nombre": "Suzuki Hayabusa (2008)",
+   "valor": 299
+  },
+  "dato": "La Hayabusa real está limitada a 299 km/h; la Hakuchou de GTA se queda en unos 216.",
+  "fuentes": [
+   "https://gtacars.net/gta5/hakuchou",
+   "https://gta.fandom.com/wiki/Hakuchou",
+   "https://en.wikipedia.org/wiki/Suzuki_Hayabusa"
+  ],
+  "confianza": "alta",
+  "video": "https://youtu.be/2HppyJ8Vdj4",
+  "videoTitulo": "¿Qué pasaría si las motos de GTA V fueran realistas?"
+ },
+ {
+  "id": "hakuchou-precio",
+  "cat": "precio",
+  "unidad": "USD",
+  "pregunta": "¿Cuál cuesta más?",
+  "gta": {
+   "nombre": "Shitzu Hakuchou",
+   "juego": "GTA Online",
+   "valor": 82000
+  },
+  "real": {
+   "nombre": "Suzuki Hayabusa (2008)",
+   "valor": 11999
+  },
+  "dato": "En GTA Online cuesta 82.000 $, casi siete veces lo que costaba una Hayabusa nueva en 2008.",
+  "fuentes": [
+   "https://gta.fandom.com/wiki/Hakuchou",
+   "https://www.totalmotorcycle.com/photos/2008models/2008models-Suzuki-HayabusaGSX1300R"
+  ],
+  "confianza": "alta",
+  "video": "https://youtu.be/2HppyJ8Vdj4",
+  "videoTitulo": "¿Qué pasaría si las motos de GTA V fueran realistas?"
+ },
+ {
+  "id": "bati-vel",
+  "cat": "velocidad",
+  "unidad": "km/h",
+  "pregunta": "¿Cuál corre más?",
+  "gta": {
+   "nombre": "Pegassi Bati 801",
+   "juego": "GTA V",
+   "valor": 217
+  },
+  "real": {
+   "nombre": "Ducati 1098",
+   "valor": 279
+  },
+  "dato": "La Ducati 1098 alcanzó 279 km/h en pruebas; la Bati 801 a tope ronda los 217.",
+  "fuentes": [
+   "https://gtacars.net/gta5/bati",
+   "https://gta.fandom.com/wiki/Bati_801",
+   "https://en.wikipedia.org/wiki/Ducati_1098"
+  ],
+  "confianza": "media",
+  "video": "https://youtu.be/2HppyJ8Vdj4",
+  "videoTitulo": "¿Qué pasaría si las motos de GTA V fueran realistas?"
+ },
+ {
+  "id": "powersurge-vel",
+  "cat": "velocidad",
+  "unidad": "km/h",
+  "pregunta": "¿Cuál corre más?",
+  "gta": {
+   "nombre": "Western Powersurge",
+   "juego": "GTA Online",
+   "valor": 209
+  },
+  "real": {
+   "nombre": "Harley-Davidson LiveWire (2019)",
+   "valor": 177
+  },
+  "dato": "Harley anuncia 177 km/h para la LiveWire; la Powersurge de GTA supera los 209.",
+  "fuentes": [
+   "https://gtacars.net/gta5/powersurge",
+   "https://gta.fandom.com/wiki/Powersurge",
+   "https://en.wikipedia.org/wiki/Harley-Davidson_LiveWire"
+  ],
+  "confianza": "alta",
+  "video": "https://youtu.be/2HppyJ8Vdj4",
+  "videoTitulo": "¿Qué pasaría si las motos de GTA V fueran realistas?"
+ },
+ {
+  "id": "powersurge-precio",
+  "cat": "precio",
+  "unidad": "USD",
+  "pregunta": "¿Cuál cuesta más?",
+  "gta": {
+   "nombre": "Western Powersurge",
+   "juego": "GTA Online",
+   "valor": 1605000
+  },
+  "real": {
+   "nombre": "Harley-Davidson LiveWire (2019)",
+   "valor": 29799
+  },
+  "dato": "La Powersurge cuesta 1.605.000 $: con eso te comprarías más de 50 LiveWire reales.",
+  "fuentes": [
+   "https://gta.fandom.com/wiki/Powersurge",
+   "https://www.cyclenews.com/2019/07/article/harley-davidson-livewire-details/"
+  ],
+  "confianza": "alta",
+  "video": "https://youtu.be/2HppyJ8Vdj4",
+  "videoTitulo": "¿Qué pasaría si las motos de GTA V fueran realistas?"
+ },
+ {
+  "id": "thrust-precio",
+  "cat": "precio",
+  "unidad": "USD",
+  "pregunta": "¿Cuál cuesta más?",
+  "gta": {
+   "nombre": "Dinka Thrust",
+   "juego": "GTA Online",
+   "valor": 75000
+  },
+  "real": {
+   "nombre": "Honda DN-01",
+   "valor": 14599
+  },
+  "dato": "La Thrust cuesta 75.000 $; la Honda DN-01 en la que se basa salió por 14.599 $.",
+  "fuentes": [
+   "https://gta.fandom.com/wiki/Thrust",
+   "https://en.wikipedia.org/wiki/Honda_DN-01"
+  ],
+  "confianza": "alta",
+  "video": "https://youtu.be/2HppyJ8Vdj4",
+  "videoTitulo": "¿Qué pasaría si las motos de GTA V fueran realistas?"
+ },
+ {
+  "id": "vindicator-precio",
+  "cat": "precio",
+  "unidad": "USD",
+  "pregunta": "¿Cuál cuesta más?",
+  "gta": {
+   "nombre": "Dinka Vindicator",
+   "juego": "GTA Online",
+   "valor": 630000
+  },
+  "real": {
+   "nombre": "Honda NM4 (2015)",
+   "valor": 10999
+  },
+  "dato": "Por lo que cuesta una Vindicator en GTA podrías comprar 57 Honda NM4 reales.",
+  "fuentes": [
+   "https://gta.fandom.com/wiki/Vindicator",
+   "https://ridermagazine.com/2015-honda-nm4-dct-abs-road-test-review/",
+   "https://www.totalmotorcycle.com/motorcycles/2015/2015-Honda-NM4-Vultus"
+  ],
+  "confianza": "alta",
+  "video": "https://youtu.be/2HppyJ8Vdj4",
+  "videoTitulo": "¿Qué pasaría si las motos de GTA V fueran realistas?"
+ },
+ {
+  "id": "esskey-precio",
+  "cat": "precio",
+  "unidad": "USD",
+  "pregunta": "¿Cuál cuesta más?",
+  "gta": {
+   "nombre": "Pegassi Esskey",
+   "juego": "GTA Online",
+   "valor": 264000
+  },
+  "real": {
+   "nombre": "Ducati Scrambler Icon (2015)",
+   "valor": 8495
+  },
+  "dato": "La Esskey cuesta 264.000 $; una Ducati Scrambler Icon de 2015 salía por 8.495 $, 31 veces menos.",
+  "fuentes": [
+   "https://gta.fandom.com/wiki/Esskey",
+   "https://ultimatemotorcycling.com/2014/09/30/2015-ducati-scrambler-first-look-four-versions-available/"
+  ],
+  "confianza": "media",
+  "video": "https://youtu.be/2HppyJ8Vdj4",
+  "videoTitulo": "¿Qué pasaría si las motos de GTA V fueran realistas?"
+ },
+ {
+  "id": "lectro-precio",
+  "cat": "precio",
+  "unidad": "USD",
+  "pregunta": "¿Cuál cuesta más?",
+  "gta": {
+   "nombre": "Principe Lectro",
+   "juego": "GTA Online",
+   "valor": 997500
+  },
+  "real": {
+   "nombre": "Ducati Streetfighter S (2009)",
+   "valor": 18995
+  },
+  "dato": "La Lectro cuesta casi un millón en GTA; la Ducati Streetfighter S costaba 18.995 $.",
+  "fuentes": [
+   "https://gta.fandom.com/wiki/Lectro",
+   "https://www.motorcycle.com/manufacturer/ducati/2009-ducati-streetfighter-review-88107.html"
+  ],
+  "confianza": "media",
+  "video": "https://youtu.be/2HppyJ8Vdj4",
+  "videoTitulo": "¿Qué pasaría si las motos de GTA V fueran realistas?"
+ },
+ {
+  "id": "nightblade-precio",
+  "cat": "precio",
+  "unidad": "USD",
+  "pregunta": "¿Cuál cuesta más?",
+  "gta": {
+   "nombre": "Western Nightblade",
+   "juego": "GTA Online",
+   "valor": 100000
+  },
+  "real": {
+   "nombre": "Harley-Davidson Night Rod Special (2013)",
+   "valor": 15449
+  },
+  "dato": "La Nightblade cuesta 100.000 $; una Harley Night Rod Special de 2013 costaba unos 15.449 $.",
+  "fuentes": [
+   "https://gta.fandom.com/wiki/Nightblade",
+   "https://www.totalmotorcycle.com/motorcycles/2013models/2013-Harley-Davidson-VROD-VRSCDX-NightRodSpecial/"
+  ],
+  "confianza": "media",
+  "video": "https://youtu.be/2HppyJ8Vdj4",
+  "videoTitulo": "¿Qué pasaría si las motos de GTA V fueran realistas?"
+ },
+ {
+  "id": "shotaro-precio",
+  "cat": "precio",
+  "unidad": "USD",
+  "pregunta": "¿Cuál cuesta más?",
+  "gta": {
+   "nombre": "Nagasaki Shotaro",
+   "juego": "GTA Online",
+   "valor": 2225000
+  },
+  "real": {
+   "nombre": "Lotus C-01",
+   "valor": 137000
+  },
+  "dato": "La Shotaro cuesta 2.225.000 $; la Lotus C-01 real, de solo 100 unidades, unos 137.000 $.",
+  "fuentes": [
+   "https://gta.fandom.com/wiki/Shotaro",
+   "https://silodrome.com/lotus-c-01/"
+  ],
+  "confianza": "media",
+  "video": "https://youtu.be/2HppyJ8Vdj4",
+  "videoTitulo": "¿Qué pasaría si las motos de GTA V fueran realistas?"
+ },
+ {
+  "id": "bagger-precio",
+  "cat": "precio",
+  "unidad": "USD",
+  "pregunta": "¿Cuál cuesta más?",
+  "gta": {
+   "nombre": "Western Bagger",
+   "juego": "GTA Online",
+   "valor": 16000
+  },
+  "real": {
+   "nombre": "Harley-Davidson Road Glide Custom (2013)",
+   "valor": 19799
+  },
+  "dato": "Aquí gana la realidad: la Harley Road Glide Custom de 2013 costaba casi 20.000 $.",
+  "fuentes": [
+   "https://gta.fandom.com/wiki/Bagger",
+   "https://www.totalmotorcycle.com/motorcycles/2013models/2013-Harley-Davidson-FLTRX-RoadGlideCustom"
+  ],
+  "confianza": "media",
+  "video": "https://youtu.be/2HppyJ8Vdj4",
+  "videoTitulo": "¿Qué pasaría si las motos de GTA V fueran realistas?"
+ },
+ {
+  "id": "longfin-vel",
+  "cat": "velocidad",
+  "unidad": "km/h",
+  "pregunta": "¿Cuál corre más?",
+  "gta": {
+   "nombre": "Shitzu Longfin",
+   "juego": "GTA Online",
+   "valor": 196
+  },
+  "real": {
+   "nombre": "Magnum 44",
+   "valor": 89
+  },
+  "dato": "La Longfin supera los 196 km/h; la Magnum 44 real se queda en 48 nudos, unos 89 km/h.",
+  "fuentes": [
+   "https://gtacars.net/gta5/longfin",
+   "https://gta.fandom.com/wiki/Longfin",
+   "https://magnummarine.com/project/44/"
+  ],
+  "confianza": "media",
+  "video": "https://youtu.be/h4HAEmU_jLI",
+  "videoTitulo": "¿Qué pasaría si los barcos de GTA V fueran realistas?"
+ },
+ {
+  "id": "toro-vel",
+  "cat": "velocidad",
+  "unidad": "km/h",
+  "pregunta": "¿Cuál corre más?",
+  "gta": {
+   "nombre": "Lampadati Toro",
+   "juego": "GTA Online",
+   "valor": 81
+  },
+  "real": {
+   "nombre": "Riva Aquarama Lamborghini",
+   "valor": 89
+  },
+  "dato": "La Riva Aquarama de Ferruccio Lamborghini, con dos motores V12, alcanzaba 48 nudos (89 km/h).",
+  "fuentes": [
+   "https://gtacars.net/gta5/toro",
+   "https://gta.fandom.com/wiki/Toro",
+   "https://newatlas.com/lamborghini-riva-aquarama/29402/"
+  ],
+  "confianza": "media",
+  "video": "https://youtu.be/h4HAEmU_jLI",
+  "videoTitulo": "¿Qué pasaría si los barcos de GTA V fueran realistas?"
+ },
+ {
+  "id": "inductor-vel",
+  "cat": "velocidad",
+  "unidad": "km/h",
+  "pregunta": "¿Cuál corre más?",
+  "gta": {
+   "nombre": "Coil Inductor",
+   "juego": "GTA Online",
+   "valor": 73
+  },
+  "real": {
+   "nombre": "Delfast Top 3.0",
+   "valor": 80
+  },
+  "dato": "La Delfast Top 3.0 real llega a 80 km/h; la Inductor de GTA se queda en 73.",
+  "fuentes": [
+   "https://gtacars.net/gta5/inductor",
+   "https://gta.fandom.com/wiki/Inductor",
+   "https://electrek.co/2020/06/11/delfast-launches-new-50-mph-top-3-0-electric-bike-belt-drive/"
+  ],
+  "confianza": "alta",
+  "video": "https://youtu.be/AHThPp3mVBI",
+  "videoTitulo": "¿Qué pasaría si las bicicletas de GTA V fueran realistas?"
+ },
+ {
+  "id": "inductor-precio",
+  "cat": "precio",
+  "unidad": "USD",
+  "pregunta": "¿Cuál cuesta más?",
+  "gta": {
+   "nombre": "Coil Inductor",
+   "juego": "GTA Online",
+   "valor": 50000
+  },
+  "real": {
+   "nombre": "Delfast Top 3.0",
+   "valor": 6799
+  },
+  "dato": "La Inductor cuesta 50.000 $ en GTA; la Delfast Top 3.0 real salió por 6.799 $.",
+  "fuentes": [
+   "https://gta.fandom.com/wiki/Inductor",
+   "https://electrek.co/2020/06/11/delfast-launches-new-50-mph-top-3-0-electric-bike-belt-drive/"
+  ],
+  "confianza": "alta",
+  "video": "https://youtu.be/AHThPp3mVBI",
+  "videoTitulo": "¿Qué pasaría si las bicicletas de GTA V fueran realistas?"
  }
 ]
