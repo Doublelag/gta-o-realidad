@@ -99,6 +99,8 @@ def pagina(d, relacionados):
   <meta property="og:title" content="{escape(pregunta)}">
   <meta property="og:description" content="¿Aciertas? Compara {escape(g['nombre'])} con {escape(r['nombre'])} y juega a ¿GTA o Realidad?">
   <meta property="og:url" content="{url}">
+  <meta property="og:image" content="{BASE}/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#14071f">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -176,6 +178,8 @@ def indice(datos):
   <title>GTA vs la vida real: todas las comparaciones</title>
   <meta name="description" content="Velocidad, precio y tamaño de coches, aviones y edificios de GTA V comparados con los reales en los que se basan. {len(datos)} comparaciones con fuentes.">
   <link rel="canonical" href="{BASE}/comparacion/">
+  <meta property="og:image" content="{BASE}/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#14071f">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
