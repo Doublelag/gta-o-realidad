@@ -199,6 +199,8 @@ body {
 .veredicto { font-family: Anton, Impact, sans-serif; font-size: 2rem; text-transform: uppercase; }
 .veredicto.bien { color: var(--bien); }
 .veredicto.mal { color: var(--mal); }
+.veredicto.gana-gta { color: var(--rosa); }
+.veredicto.gana-real { color: var(--cian); }
 .dato { color: var(--suave); line-height: 1.55; max-width: 560px; margin: 8px auto 16px; }
 .enlace-video { display: table; margin: 0 auto 18px; color: var(--naranja); font-weight: 800; }
 
@@ -284,6 +286,28 @@ body {
 .top-chat { max-width: 360px; margin: 26px auto 0; text-align: left; }
 .top-chat h3 { text-align: center; margin-bottom: 10px; }
 .top-chat ol { padding-left: 1.6em; line-height: 1.9; font-weight: 700; }
+
+/* Páginas de comparación */
+.pagina { text-align: center; }
+.pagina a { color: var(--naranja); }
+.migas { font-size: .85rem; color: var(--suave); margin-bottom: 18px; text-align: left; }
+.migas a { color: var(--suave); }
+.revelar { margin: 10px 0 26px; }
+.revelar summary { display: inline-block; list-style: none; margin-bottom: 22px; }
+.revelar summary::-webkit-details-marker { display: none; }
+.revelar[open] summary { display: none; }
+.revelar .carta { cursor: default; }
+.cta-jugar { background: linear-gradient(90deg, var(--rosa), var(--morado)); text-align: center; }
+.pagina .cta { color: var(--texto); }
+.pagina .cta-video { color: var(--texto); }
+.bloque { text-align: left; margin-top: 36px; }
+.bloque h2 { font-family: Anton, Impact, sans-serif; font-weight: 400; text-transform: uppercase; margin-bottom: 10px; }
+.fuentes, .relacionados { padding-left: 1.2em; line-height: 1.9; color: var(--suave); }
+.fuentes a { color: var(--suave); word-break: break-all; }
+.relacionados a { color: var(--texto); text-decoration: none; }
+.relacionados a:hover { color: var(--naranja); }
+.relacionados span { color: var(--naranja); font-size: .85em; }
+.enlace-todas { display: inline-block; margin-top: 8px; color: var(--suave); font-size: .9rem; }
 
 .pie {
   padding: 16px;

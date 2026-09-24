@@ -5,7 +5,10 @@ window.CONFIG = {
   discord: "https://discord.gg/4Eucs5dQz4",                     // Double City
   instantGaming: "https://www.instant-gaming.com/?igr=Doublelag", // afiliado
   // Vídeo que se recomienda al terminar la partida.
-  videoFinal: { titulo: "", url: "" },
+  videoFinal: {
+    titulo: "¿Qué pasaría si los aviones de GTA V fueran realistas?",
+    url: "https://youtu.be/8Gt2P2MlPk4",
+  },
   vidas: 3,
   // Modo directo: segundos para votar y para pasar a la siguiente ronda.
   segundosVoto: 20,

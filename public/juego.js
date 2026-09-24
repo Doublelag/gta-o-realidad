@@ -135,7 +135,10 @@
 
     const video = $("enlace-video");
     video.hidden = !actual.video;
-    if (actual.video) video.href = actual.video;
+    if (actual.video) {
+      video.href = actual.video;
+      video.textContent = `🎥 ${actual.videoTitulo || "Lo explico en este vídeo"}`;
+    }
 
     $("btn-siguiente").textContent = vidas > 0 ? "Siguiente" : "Ver resultado";
     $("resultado").hidden = false;

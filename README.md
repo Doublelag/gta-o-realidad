@@ -44,6 +44,14 @@ Para probar sin directo: añade `&prueba` a la URL y usa `simularChat(...)` en l
 
 `cat`: `velocidad`, `precio`, `tamano` u `otro`. `unidad`: `km/h`, `USD`, `EUR`, `m`, `km²`…
 
+## Páginas SEO
+
+`python build.py` genera una página por comparación en `public/comparacion/`,
+más el índice, `sitemap.xml` y `robots.txt`. Cada página tiene la pregunta,
+la respuesta oculta tras un botón, el dato, las fuentes, el vídeo relacionado y
+datos estructurados FAQ. Vuelve a ejecutarlo cada vez que cambie `datos.json`.
+No edites a mano lo generado.
+
 ## Probar en local
 
 ```bash
