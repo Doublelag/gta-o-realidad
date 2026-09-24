@@ -15,6 +15,17 @@ sin relación con Rockstar Games ni Take-Two.
 - Récord guardado en el navegador del jugador (`localStorage`).
 - Compartir la racha con el menú nativo del móvil o copiándola al portapapeles.
 
+## Modo directo (chat de Twitch)
+
+Abre el juego con `?directo=tucanal` (o actívalo en la portada) y úsalo como
+fuente de navegador en OBS. El chat vota con `!1` (GTA) o `!2` (real); al
+acabar la cuenta atrás gana la mayoría, se revela y pasa sola a la siguiente.
+Al final sale el top 5 del chat. Lee el chat en modo anónimo: no hace falta
+token ni cuenta.
+
+Tiempos en `config.js`: `segundosVoto` (20 por defecto) y `segundosAvance` (8).
+Para probar sin directo: añade `&prueba` a la URL y usa `simularChat(...)` en la consola.
+
 ## Añadir un dato
 
 ```json

@@ -1,5 +1,817 @@
 [
-  {"id":"prueba1","cat":"velocidad","unidad":"km/h","pregunta":"¿Cuál corre más?","gta":{"nombre":"PRUEBA coche A","juego":"GTA V","valor":200},"real":{"nombre":"PRUEBA coche B","valor":300},"dato":"Dato de prueba, se sustituye por los verificados."},
-  {"id":"prueba2","cat":"precio","unidad":"USD","pregunta":"¿Cuál cuesta más?","gta":{"nombre":"PRUEBA avión A","juego":"GTA V","valor":2500000},"real":{"nombre":"PRUEBA avión B","valor":900000},"dato":"Dato de prueba.","video":"https://www.youtube.com/@DoublelagGTA6"},
-  {"id":"prueba3","cat":"tamano","unidad":"m","pregunta":"¿Cuál es más alto?","gta":{"nombre":"PRUEBA torre A","juego":"GTA V","valor":250},"real":{"nombre":"PRUEBA torre B","valor":310},"dato":"Dato de prueba."}
+ {
+  "id": "infernus-vel",
+  "cat": "velocidad",
+  "unidad": "km/h",
+  "pregunta": "¿Cuál corre más?",
+  "gta": {
+   "nombre": "Pegassi Infernus",
+   "juego": "GTA V",
+   "valor": 190
+  },
+  "real": {
+   "nombre": "Lamborghini Murciélago LP 640",
+   "valor": 340
+  },
+  "dato": "El Murciélago real saca 150 km/h al Infernus: en GTA ningún superdeportivo pasa mucho de 200.",
+  "fuentes": [
+   "https://gtacars.net/gta5/infernus",
+   "https://gta.fandom.com/wiki/Infernus",
+   "https://en.wikipedia.org/wiki/Lamborghini_Murciélago"
+  ],
+  "confianza": "alta"
+ },
+ {
+  "id": "adder-vel",
+  "cat": "velocidad",
+  "unidad": "km/h",
+  "pregunta": "¿Cuál corre más?",
+  "gta": {
+   "nombre": "Truffade Adder",
+   "juego": "GTA V",
+   "valor": 203
+  },
+  "real": {
+   "nombre": "Bugatti Veyron 16.4",
+   "valor": 407
+  },
+  "dato": "El Veyron real va al doble: 407 km/h homologados. El Adder, a tope de mejoras, ronda los 203.",
+  "fuentes": [
+   "https://gtacars.net/gta5/adder",
+   "https://gta.fandom.com/wiki/Adder",
+   "https://en.wikipedia.org/wiki/Bugatti_Veyron"
+  ],
+  "confianza": "alta"
+ },
+ {
+  "id": "turismor-vel",
+  "cat": "velocidad",
+  "unidad": "km/h",
+  "pregunta": "¿Cuál corre más?",
+  "gta": {
+   "nombre": "Grotti Turismo R",
+   "juego": "GTA V",
+   "valor": 197
+  },
+  "real": {
+   "nombre": "Ferrari LaFerrari",
+   "valor": 350
+  },
+  "dato": "Ferrari declara más de 350 km/h para LaFerrari; su clon de GTA no llega ni a 200.",
+  "fuentes": [
+   "https://gtacars.net/gta5/turismor",
+   "https://gta.fandom.com/wiki/Turismo_R",
+   "https://en.wikipedia.org/wiki/LaFerrari"
+  ],
+  "confianza": "alta"
+ },
+ {
+  "id": "t20-vel",
+  "cat": "velocidad",
+  "unidad": "km/h",
+  "pregunta": "¿Cuál corre más?",
+  "gta": {
+   "nombre": "Progen T20",
+   "juego": "GTA V",
+   "valor": 197
+  },
+  "real": {
+   "nombre": "McLaren P1",
+   "valor": 350
+  },
+  "dato": "El P1 está limitado electrónicamente a 350 km/h. El T20 se queda en unos 197.",
+  "fuentes": [
+   "https://gtacars.net/gta5/t20",
+   "https://gta.fandom.com/wiki/T20",
+   "https://en.wikipedia.org/wiki/McLaren_P1"
+  ],
+  "confianza": "alta"
+ },
+ {
+  "id": "bullet-vel",
+  "cat": "velocidad",
+  "unidad": "km/h",
+  "pregunta": "¿Cuál corre más?",
+  "gta": {
+   "nombre": "Vapid Bullet",
+   "juego": "GTA V",
+   "valor": 193
+  },
+  "real": {
+   "nombre": "Ford GT (2005)",
+   "valor": 330
+  },
+  "dato": "El Ford GT de 2005 alcanzaba 330 km/h (205 mph); el Bullet no pasa de 193.",
+  "fuentes": [
+   "https://gtacars.net/gta5/bullet",
+   "https://gta.fandom.com/wiki/Bullet",
+   "https://en.wikipedia.org/wiki/Ford_GT"
+  ],
+  "confianza": "alta"
+ },
+ {
+  "id": "811-vel",
+  "cat": "velocidad",
+  "unidad": "km/h",
+  "pregunta": "¿Cuál corre más?",
+  "gta": {
+   "nombre": "Pfister 811",
+   "juego": "GTA V",
+   "valor": 210
+  },
+  "real": {
+   "nombre": "Porsche 918 Spyder",
+   "valor": 345
+  },
+  "dato": "El 811 es de los coches más rápidos de GTA, y aun así el 918 real le saca 135 km/h.",
+  "fuentes": [
+   "https://gtacars.net/gta5/pfister811",
+   "https://gta.fandom.com/wiki/811",
+   "https://en.wikipedia.org/wiki/Porsche_918_Spyder"
+  ],
+  "confianza": "alta"
+ },
+ {
+  "id": "nero-vel",
+  "cat": "velocidad",
+  "unidad": "km/h",
+  "pregunta": "¿Cuál corre más?",
+  "gta": {
+   "nombre": "Truffade Nero",
+   "juego": "GTA V",
+   "valor": 203
+  },
+  "real": {
+   "nombre": "Bugatti Chiron",
+   "valor": 420
+  },
+  "dato": "El Chiron está limitado a 420 km/h: más del doble que el Nero en el juego.",
+  "fuentes": [
+   "https://gtacars.net/gta5/nero",
+   "https://gta.fandom.com/wiki/Nero",
+   "https://en.wikipedia.org/wiki/Bugatti_Chiron"
+  ],
+  "confianza": "alta"
+ },
+ {
+  "id": "elegy-vel",
+  "cat": "velocidad",
+  "unidad": "km/h",
+  "pregunta": "¿Cuál corre más?",
+  "gta": {
+   "nombre": "Annis Elegy RH8",
+   "juego": "GTA V",
+   "valor": 191
+  },
+  "real": {
+   "nombre": "Nissan GT-R (R35)",
+   "valor": 315
+  },
+  "dato": "Nissan anunció 315 km/h (196 mph) para el GT-R; el Elegy RH8 se queda en 191.",
+  "fuentes": [
+   "https://gtacars.net/gta5/elegy2",
+   "https://gta.fandom.com/wiki/Elegy_RH8",
+   "https://en.wikipedia.org/wiki/Nissan_GT-R"
+  ],
+  "confianza": "alta"
+ },
+ {
+  "id": "panto-vel",
+  "cat": "velocidad",
+  "unidad": "km/h",
+  "pregunta": "¿Cuál corre más?",
+  "gta": {
+   "nombre": "Benefactor Panto",
+   "juego": "GTA V",
+   "valor": 162
+  },
+  "real": {
+   "nombre": "Smart Fortwo (2ª gen., gasolina)",
+   "valor": 145
+  },
+  "dato": "¡Gana GTA! El Smart real está limitado a 145 km/h; el Panto del juego llega a 162.",
+  "fuentes": [
+   "https://gtacars.net/gta5/panto",
+   "https://gta.fandom.com/wiki/Panto",
+   "https://en.wikipedia.org/wiki/Smart_Fortwo"
+  ],
+  "confianza": "alta"
+ },
+ {
+  "id": "deluxo-vel",
+  "cat": "velocidad",
+  "unidad": "km/h",
+  "pregunta": "¿Cuál corre más?",
+  "gta": {
+   "nombre": "Imponte Deluxo (en carretera)",
+   "juego": "GTA V",
+   "valor": 205
+  },
+  "real": {
+   "nombre": "DeLorean DMC-12",
+   "valor": 177
+  },
+  "dato": "En pruebas reales el DeLorean solo dio 177 km/h (110 mph). El Deluxo, además, vuela.",
+  "fuentes": [
+   "https://gtacars.net/gta5/deluxo",
+   "https://gta.fandom.com/wiki/Deluxo",
+   "https://en.wikipedia.org/wiki/DMC_DeLorean"
+  ],
+  "confianza": "alta"
+ },
+ {
+  "id": "stromberg-vel",
+  "cat": "velocidad",
+  "unidad": "km/h",
+  "pregunta": "¿Cuál corre más?",
+  "gta": {
+   "nombre": "Ocelot Stromberg (en carretera)",
+   "juego": "GTA V",
+   "valor": 181
+  },
+  "real": {
+   "nombre": "Lotus Esprit S1 (1976)",
+   "valor": 214
+  },
+  "dato": "El Esprit de James Bond rondaba 214 km/h en 1976; el Stromberg se queda en 181.",
+  "fuentes": [
+   "https://gtacars.net/gta5/stromberg",
+   "https://gta.fandom.com/wiki/Toreador",
+   "https://en.wikipedia.org/wiki/Lotus_Esprit"
+  ],
+  "confianza": "media"
+ },
+ {
+  "id": "duster-vel",
+  "cat": "velocidad",
+  "unidad": "km/h",
+  "pregunta": "¿Cuál corre más?",
+  "gta": {
+   "nombre": "Duster (avioneta fumigadora)",
+   "juego": "GTA V",
+   "valor": 232
+  },
+  "real": {
+   "nombre": "Boeing-Stearman Model 75 (PT-17)",
+   "valor": 200
+  },
+  "dato": "¡Gana GTA! El biplano Stearman real apenas pasaba de 200 km/h (124 mph).",
+  "fuentes": [
+   "https://gtacars.net/gta5/duster",
+   "https://gta.fandom.com/wiki/Duster",
+   "https://en.wikipedia.org/wiki/Boeing-Stearman_Model_75"
+  ],
+  "confianza": "alta"
+ },
+ {
+  "id": "hydra-vel",
+  "cat": "velocidad",
+  "unidad": "km/h",
+  "pregunta": "¿Cuál corre más?",
+  "gta": {
+   "nombre": "Mammoth Hydra",
+   "juego": "GTA V",
+   "valor": 337
+  },
+  "real": {
+   "nombre": "McDonnell Douglas AV-8B Harrier II",
+   "valor": 1083
+  },
+  "dato": "El Harrier real vuela a 1.083 km/h: más del triple que el Hydra del juego.",
+  "fuentes": [
+   "https://gtacars.net/gta5/hydra",
+   "https://gta.fandom.com/wiki/Hydra",
+   "https://en.wikipedia.org/wiki/McDonnell_Douglas_AV-8B_Harrier_II"
+  ],
+  "confianza": "alta"
+ },
+ {
+  "id": "buzzard-vel",
+  "cat": "velocidad",
+  "unidad": "km/h",
+  "pregunta": "¿Cuál corre más?",
+  "gta": {
+   "nombre": "Buzzard Attack Chopper",
+   "juego": "GTA V",
+   "valor": 233
+  },
+  "real": {
+   "nombre": "MD Helicopters MH-6 / AH-6 Little Bird",
+   "valor": 282
+  },
+  "dato": "El Little Bird real alcanza 282 km/h (152 nudos), casi 50 más que el Buzzard.",
+  "fuentes": [
+   "https://gtacars.net/gta5/buzzard",
+   "https://gta.fandom.com/wiki/Buzzard_Attack_Chopper",
+   "https://en.wikipedia.org/wiki/MD_Helicopters_MH-6_Little_Bird"
+  ],
+  "confianza": "alta"
+ },
+ {
+  "id": "hunter-vel",
+  "cat": "velocidad",
+  "unidad": "km/h",
+  "pregunta": "¿Cuál corre más?",
+  "gta": {
+   "nombre": "FH-1 Hunter",
+   "juego": "GTA V",
+   "valor": 248
+  },
+  "real": {
+   "nombre": "Boeing AH-64 Apache",
+   "valor": 293
+  },
+  "dato": "El Apache real llega a 293 km/h (158 nudos); el Hunter se queda en 248.",
+  "fuentes": [
+   "https://gtacars.net/gta5/hunter",
+   "https://gta.fandom.com/wiki/Hunter",
+   "https://en.wikipedia.org/wiki/Boeing_AH-64_Apache"
+  ],
+  "confianza": "alta"
+ },
+ {
+  "id": "cargoplane-vel",
+  "cat": "velocidad",
+  "unidad": "km/h",
+  "pregunta": "¿Cuál corre más?",
+  "gta": {
+   "nombre": "Cargo Plane",
+   "juego": "GTA V",
+   "valor": 224
+  },
+  "real": {
+   "nombre": "Antonov An-124 Ruslan (crucero)",
+   "valor": 865
+  },
+  "dato": "Solo a velocidad de crucero, el An-124 real va casi cuatro veces más rápido.",
+  "fuentes": [
+   "https://gtacars.net/gta5/cargoplane",
+   "https://gta.fandom.com/wiki/Cargo_Plane",
+   "https://en.wikipedia.org/wiki/Antonov_An-124_Ruslan"
+  ],
+  "confianza": "alta"
+ },
+ {
+  "id": "avenger-vel",
+  "cat": "velocidad",
+  "unidad": "km/h",
+  "pregunta": "¿Cuál corre más?",
+  "gta": {
+   "nombre": "Mammoth Avenger",
+   "juego": "GTA V",
+   "valor": 287
+  },
+  "real": {
+   "nombre": "Bell Boeing V-22 Osprey",
+   "valor": 509
+  },
+  "dato": "El Osprey real vuela a 509 km/h (275 nudos); el Avenger no llega ni a 290.",
+  "fuentes": [
+   "https://gtacars.net/gta5/avenger",
+   "https://gta.fandom.com/wiki/Avenger",
+   "https://en.wikipedia.org/wiki/Bell_Boeing_V-22_Osprey"
+  ],
+  "confianza": "alta"
+ },
+ {
+  "id": "zentorno-precio",
+  "cat": "precio",
+  "unidad": "USD",
+  "pregunta": "¿Cuál cuesta más?",
+  "gta": {
+   "nombre": "Pegassi Zentorno",
+   "juego": "GTA V",
+   "valor": 725000
+  },
+  "real": {
+   "nombre": "Lamborghini Sesto Elemento",
+   "valor": 2200000
+  },
+  "dato": "El Sesto Elemento costaba 2,2 millones reales: el Zentorno es una ganga a su lado.",
+  "fuentes": [
+   "https://gtacars.net/gta5/zentorno",
+   "https://gta.fandom.com/wiki/Zentorno",
+   "https://en.wikipedia.org/wiki/Lamborghini_Sesto_Elemento"
+  ],
+  "confianza": "alta"
+ },
+ {
+  "id": "turismor-precio",
+  "cat": "precio",
+  "unidad": "USD",
+  "pregunta": "¿Cuál cuesta más?",
+  "gta": {
+   "nombre": "Grotti Turismo R",
+   "juego": "GTA V",
+   "valor": 500000
+  },
+  "real": {
+   "nombre": "Ferrari LaFerrari",
+   "valor": 1400000
+  },
+  "dato": "LaFerrari salió por unos 1,4 millones de dólares; en GTA cuesta casi tres veces menos.",
+  "fuentes": [
+   "https://gtacars.net/gta5/turismor",
+   "https://gta.fandom.com/wiki/Turismo_R",
+   "https://www.nbcnews.com/business/laferrari-fastest-most-expensive-totally-sold-out-2D11691591",
+   "https://www.hagerty.com/media/buying-and-selling/laferrari-sale/"
+  ],
+  "confianza": "alta"
+ },
+ {
+  "id": "t20-precio",
+  "cat": "precio",
+  "unidad": "USD",
+  "pregunta": "¿Cuál cuesta más?",
+  "gta": {
+   "nombre": "Progen T20",
+   "juego": "GTA V",
+   "valor": 2200000
+  },
+  "real": {
+   "nombre": "McLaren P1",
+   "valor": 1150000
+  },
+  "dato": "¡Gana GTA! El P1 costaba 1,15 millones en EE. UU.; el T20 casi el doble.",
+  "fuentes": [
+   "https://gtacars.net/gta5/t20",
+   "https://gta.fandom.com/wiki/T20",
+   "https://www.mclarenpalmbeach.com/mclaren-information/how-much-is-a-mclaren-p1/"
+  ],
+  "confianza": "alta"
+ },
+ {
+  "id": "osiris-precio",
+  "cat": "precio",
+  "unidad": "USD",
+  "pregunta": "¿Cuál cuesta más?",
+  "gta": {
+   "nombre": "Pegassi Osiris",
+   "juego": "GTA V",
+   "valor": 1950000
+  },
+  "real": {
+   "nombre": "Pagani Huayra",
+   "valor": 1400000
+  },
+  "dato": "¡Gana GTA! El Huayra salió en EE. UU. por unos 1,4 millones; el Osiris cuesta 1,95.",
+  "fuentes": [
+   "https://gtacars.net/gta5/osiris",
+   "https://gta.fandom.com/wiki/Osiris",
+   "https://carbuzz.com/cars/pagani/huayra/2012/",
+   "https://www.evo.co.uk/pagani/huayra/12324/geneva-2012-pagani-announces-more-orders"
+  ],
+  "confianza": "media"
+ },
+ {
+  "id": "entityxf-precio",
+  "cat": "precio",
+  "unidad": "USD",
+  "pregunta": "¿Cuál cuesta más?",
+  "gta": {
+   "nombre": "Överflöd Entity XF",
+   "juego": "GTA V",
+   "valor": 795000
+  },
+  "real": {
+   "nombre": "Koenigsegg CCX",
+   "valor": 545000
+  },
+  "dato": "¡Gana GTA! Un CCX de serie costaba unos 545.000 dólares; el Entity XF, 795.000.",
+  "fuentes": [
+   "https://gtacars.net/gta5/entityxf",
+   "https://gta.fandom.com/wiki/Entity_XF",
+   "https://automobile.fandom.com/wiki/Koenigsegg_CCX",
+   "https://www.koenigsegg.com/model/ccx"
+  ],
+  "confianza": "media"
+ },
+ {
+  "id": "infernus-precio",
+  "cat": "precio",
+  "unidad": "USD",
+  "pregunta": "¿Cuál cuesta más?",
+  "gta": {
+   "nombre": "Pegassi Infernus",
+   "juego": "GTA V",
+   "valor": 440000
+  },
+  "real": {
+   "nombre": "Lamborghini Murciélago LP 640",
+   "valor": 354000
+  },
+  "dato": "¡Gana GTA! El Murciélago LP 640 costaba unos 354.000 dólares nuevo; el Infernus, 440.000.",
+  "fuentes": [
+   "https://gtacars.net/gta5/infernus",
+   "https://gta.fandom.com/wiki/Infernus",
+   "https://www.autoweb.com/2007-lamborghini-murcielago-lp640-first-drive"
+  ],
+  "confianza": "media"
+ },
+ {
+  "id": "bullet-precio",
+  "cat": "precio",
+  "unidad": "USD",
+  "pregunta": "¿Cuál cuesta más?",
+  "gta": {
+   "nombre": "Vapid Bullet",
+   "juego": "GTA V",
+   "valor": 155000
+  },
+  "real": {
+   "nombre": "Ford GT (2005)",
+   "valor": 139995
+  },
+  "dato": "¡Gana GTA! El Ford GT tenía un precio oficial de 139.995 dólares; el Bullet, 155.000.",
+  "fuentes": [
+   "https://gtacars.net/gta5/bullet",
+   "https://gta.fandom.com/wiki/Bullet",
+   "https://en.wikipedia.org/wiki/Ford_GT"
+  ],
+  "confianza": "alta"
+ },
+ {
+  "id": "811-precio",
+  "cat": "precio",
+  "unidad": "USD",
+  "pregunta": "¿Cuál cuesta más?",
+  "gta": {
+   "nombre": "Pfister 811",
+   "juego": "GTA V",
+   "valor": 1135000
+  },
+  "real": {
+   "nombre": "Porsche 918 Spyder",
+   "valor": 845000
+  },
+  "dato": "¡Gana GTA! El 918 Spyder partía de 845.000 dólares; el 811 supera el millón.",
+  "fuentes": [
+   "https://gtacars.net/gta5/pfister811",
+   "https://gta.fandom.com/wiki/811",
+   "https://en.wikipedia.org/wiki/Porsche_918_Spyder"
+  ],
+  "confianza": "alta"
+ },
+ {
+  "id": "nero-precio",
+  "cat": "precio",
+  "unidad": "USD",
+  "pregunta": "¿Cuál cuesta más?",
+  "gta": {
+   "nombre": "Truffade Nero",
+   "juego": "GTA V",
+   "valor": 1440000
+  },
+  "real": {
+   "nombre": "Bugatti Chiron",
+   "valor": 2998000
+  },
+  "dato": "El Chiron arrancaba en casi 3 millones de dólares: más del doble que el Nero.",
+  "fuentes": [
+   "https://gtacars.net/gta5/nero",
+   "https://gta.fandom.com/wiki/Nero",
+   "https://luxe.digital/lifestyle/garage/bugatti-price-list/",
+   "https://en.wikipedia.org/wiki/Bugatti_Chiron"
+  ],
+  "confianza": "alta"
+ },
+ {
+  "id": "emerus-precio",
+  "cat": "precio",
+  "unidad": "USD",
+  "pregunta": "¿Cuál cuesta más?",
+  "gta": {
+   "nombre": "Progen Emerus",
+   "juego": "GTA V",
+   "valor": 2750000
+  },
+  "real": {
+   "nombre": "McLaren Senna",
+   "valor": 958966
+  },
+  "dato": "¡Gana GTA! El Senna costaba unos 959.000 dólares; el Emerus casi lo triplica.",
+  "fuentes": [
+   "https://gtacars.net/gta5/emerus",
+   "https://gta.fandom.com/wiki/Emerus",
+   "https://www.classic.com/m/mclaren/senna/",
+   "https://en.wikipedia.org/wiki/McLaren_Senna"
+  ],
+  "confianza": "media"
+ },
+ {
+  "id": "deluxo-precio",
+  "cat": "precio",
+  "unidad": "USD",
+  "pregunta": "¿Cuál cuesta más?",
+  "gta": {
+   "nombre": "Imponte Deluxo",
+   "juego": "GTA V",
+   "valor": 5750000
+  },
+  "real": {
+   "nombre": "DeLorean DMC-12 (1981)",
+   "valor": 25000
+  },
+  "dato": "¡Gana GTA! El DeLorean salió por 25.000 dólares en 1981. El Deluxo vuela, eso sí.",
+  "fuentes": [
+   "https://gtacars.net/gta5/deluxo",
+   "https://gta.fandom.com/wiki/Deluxo",
+   "https://en.wikipedia.org/wiki/DMC_DeLorean"
+  ],
+  "confianza": "alta"
+ },
+ {
+  "id": "panto-precio",
+  "cat": "precio",
+  "unidad": "USD",
+  "pregunta": "¿Cuál cuesta más?",
+  "gta": {
+   "nombre": "Benefactor Panto",
+   "juego": "GTA V",
+   "valor": 85000
+  },
+  "real": {
+   "nombre": "Smart Fortwo Pure (2009, EE. UU.)",
+   "valor": 11990
+  },
+  "dato": "¡Gana GTA! Un Smart costaba 11.990 dólares; el Panto del juego vale siete veces más.",
+  "fuentes": [
+   "https://gtacars.net/gta5/panto",
+   "https://gta.fandom.com/wiki/Panto",
+   "https://en.wikipedia.org/wiki/Smart_Fortwo"
+  ],
+  "confianza": "alta"
+ },
+ {
+  "id": "elegy-precio",
+  "cat": "precio",
+  "unidad": "USD",
+  "pregunta": "¿Cuál cuesta más?",
+  "gta": {
+   "nombre": "Annis Elegy RH8",
+   "juego": "GTA V",
+   "valor": 95000
+  },
+  "real": {
+   "nombre": "Nissan GT-R (2011)",
+   "valor": 84060
+  },
+  "dato": "¡Gana GTA! El GT-R de 2011 costaba 84.060 dólares; el Elegy RH8, 95.000.",
+  "fuentes": [
+   "https://gtacars.net/gta5/elegy2",
+   "https://gta.fandom.com/wiki/Elegy_RH8",
+   "https://www.autoguide.com/auto-news/2010/03/2011-nissan-gt-r-priced-from-85060.html"
+  ],
+  "confianza": "alta"
+ },
+ {
+  "id": "hydra-precio",
+  "cat": "precio",
+  "unidad": "USD",
+  "pregunta": "¿Cuál cuesta más?",
+  "gta": {
+   "nombre": "Mammoth Hydra",
+   "juego": "GTA V",
+   "valor": 3990000
+  },
+  "real": {
+   "nombre": "McDonnell Douglas AV-8B Harrier II",
+   "valor": 21600000
+  },
+  "dato": "Cada Harrier II costó unos 21,6 millones al entrar en servicio en 1985. El Hydra, 4.",
+  "fuentes": [
+   "https://gtacars.net/gta5/hydra",
+   "https://gta.fandom.com/wiki/Hydra",
+   "https://www.military.com/equipment/av-8b-harrier-ii"
+  ],
+  "confianza": "media"
+ },
+ {
+  "id": "avenger-precio",
+  "cat": "precio",
+  "unidad": "USD",
+  "pregunta": "¿Cuál cuesta más?",
+  "gta": {
+   "nombre": "Mammoth Avenger",
+   "juego": "GTA V",
+   "valor": 3450000
+  },
+  "real": {
+   "nombre": "Bell Boeing V-22 Osprey",
+   "valor": 67000000
+  },
+  "dato": "Un Osprey real costaba 67 millones por unidad en 2008: casi 20 Avengers.",
+  "fuentes": [
+   "https://gtacars.net/gta5/avenger",
+   "https://gta.fandom.com/wiki/Avenger",
+   "https://en.wikipedia.org/wiki/Bell_Boeing_V-22_Osprey"
+  ],
+  "confianza": "alta"
+ },
+ {
+  "id": "hunter-precio",
+  "cat": "precio",
+  "unidad": "USD",
+  "pregunta": "¿Cuál cuesta más?",
+  "gta": {
+   "nombre": "FH-1 Hunter",
+   "juego": "GTA V",
+   "valor": 4123000
+  },
+  "real": {
+   "nombre": "Boeing AH-64A Apache",
+   "valor": 13900000
+  },
+  "dato": "El coste medio de un Apache en 1986 era de 13,9 millones; el Hunter, 4,1.",
+  "fuentes": [
+   "https://gtacars.net/gta5/hunter",
+   "https://gta.fandom.com/wiki/Hunter",
+   "https://en.wikipedia.org/wiki/Boeing_AH-64_Apache"
+  ],
+  "confianza": "media"
+ },
+ {
+  "id": "mazebank-altura",
+  "cat": "tamano",
+  "unidad": "m",
+  "pregunta": "¿Cuál es más alto?",
+  "gta": {
+   "nombre": "Maze Bank Tower",
+   "juego": "GTA V",
+   "valor": 273
+  },
+  "real": {
+   "nombre": "U.S. Bank Tower (Los Ángeles)",
+   "valor": 310
+  },
+  "dato": "El rascacielos real mide 310 metros; su copia en Los Santos se queda en 273.",
+  "fuentes": [
+   "https://gta.fandom.com/wiki/Maze_Bank_Tower",
+   "https://en.wikipedia.org/wiki/U.S._Bank_Tower_(Los_Angeles)"
+  ],
+  "confianza": "alta"
+ },
+ {
+  "id": "chiliad-altura",
+  "cat": "tamano",
+  "unidad": "m",
+  "pregunta": "¿Cuál es más alto?",
+  "gta": {
+   "nombre": "Monte Chiliad (altura real en el juego)",
+   "juego": "GTA V",
+   "valor": 800
+  },
+  "real": {
+   "nombre": "Pico San Jacinto (California)",
+   "valor": 3302
+  },
+  "dato": "El cartel del juego dice 2.744 m, pero el Chiliad mide unos 800. San Jacinto: 3.302.",
+  "fuentes": [
+   "https://gta.fandom.com/wiki/Mount_Chiliad_(HD_Universe)",
+   "https://en.wikipedia.org/wiki/San_Jacinto_Peak"
+  ],
+  "confianza": "media"
+ },
+ {
+  "id": "alamo-area",
+  "cat": "tamano",
+  "unidad": "km²",
+  "pregunta": "¿Cuál es más grande?",
+  "gta": {
+   "nombre": "Alamo Sea",
+   "juego": "GTA V",
+   "valor": 1.5
+  },
+  "real": {
+   "nombre": "Salton Sea (California)",
+   "valor": 823.6
+  },
+  "dato": "El Salton Sea real ocupa 823 km²; el Alamo Sea, apenas 1,5. Unas 550 veces menos.",
+  "fuentes": [
+   "https://gta.fandom.com/wiki/Alamo_Sea",
+   "https://en.wikipedia.org/wiki/Salton_Sea"
+  ],
+  "confianza": "alta"
+ },
+ {
+  "id": "mapa-area",
+  "cat": "tamano",
+  "unidad": "km²",
+  "pregunta": "¿Cuál es más grande?",
+  "gta": {
+   "nombre": "Mapa entero de GTA V (San Andreas)",
+   "juego": "GTA V",
+   "valor": 127
+  },
+  "real": {
+   "nombre": "Ciudad de Los Ángeles",
+   "valor": 1291
+  },
+  "dato": "Todo el mapa de GTA V cabe unas diez veces en la ciudad de Los Ángeles.",
+  "fuentes": [
+   "https://gta.fandom.com/wiki/San_Andreas_(HD_Universe)",
+   "https://en.wikipedia.org/wiki/Los_Angeles"
+  ],
+  "confianza": "media"
+ }
 ]

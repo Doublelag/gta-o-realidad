@@ -81,6 +81,7 @@
       carta.classList.remove("ganadora", "perdedora", "elegida", "fallo");
     }
     $("resultado").hidden = true;
+    window.dispatchEvent(new CustomEvent("juego:ronda", { detail: actual }));
   }
 
   function contar(el, hasta, unidad) {
@@ -90,7 +91,7 @@
     const dur = 700;
     const paso = (t) => {
       const k = Math.min(1, (t - inicio) / dur);
-      const v = Math.round(hasta * (1 - Math.pow(1 - k, 3)));
+      const v = k < 1 ? Math.round(hasta * (1 - Math.pow(1 - k, 3))) : hasta;
       el.textContent = formatear(v, unidad);
       if (k < 1) requestAnimationFrame(paso);
     };
@@ -115,6 +116,8 @@
 
     contar($("gta-valor"), actual.gta.valor, actual.unidad);
     contar($("real-valor"), actual.real.valor, actual.unidad);
+
+    window.dispatchEvent(new CustomEvent("juego:resuelta", { detail: { ganador: gtaGana ? "gta" : "real" } }));
 
     historial.push(acierto);
     if (acierto) {
@@ -152,6 +155,7 @@
     $("aviso-copia").hidden = true;
     pintarCtas();
     mostrar("final");
+    window.dispatchEvent(new CustomEvent("juego:final"));
   }
 
   function textoCompartir() {
@@ -210,6 +214,12 @@
     if (e.key === "1" && !$("carta-gta").disabled) elegir("gta");
     if (e.key === "2" && !$("carta-real").disabled) elegir("real");
   });
+
+  // Para el modo directo (directo.js).
+  window.Juego = {
+    empezar,
+    elegir: (lado) => { if (!$("carta-gta").disabled) elegir(lado); },
+  };
 
   $("btn-jugar").disabled = true;
   cargar()

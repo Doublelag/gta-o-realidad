@@ -25,6 +25,19 @@
       <p class="sub">Coches, precios y edificios de GTA contra la vida real.<br>Elige cuál es mayor. Tienes <b id="vidas-portada">3</b> vidas.</p>
       <button id="btn-jugar" class="btn btn-principal">Jugar</button>
       <p class="record" id="record-portada"></p>
+
+      <details class="directo-config">
+        <summary>🔴 Modo directo: que juegue tu chat de Twitch</summary>
+        <form id="form-directo">
+          <label for="canal-twitch">Canal de Twitch</label>
+          <div class="fila">
+            <input id="canal-twitch" name="canal" placeholder="doublelag" autocomplete="off" spellcheck="false" required>
+            <button class="btn" type="submit">Conectar</button>
+          </div>
+          <p class="ayuda">El chat vota con <b>!1</b> (GTA) o <b>!2</b> (real). Gana la mayoría al acabar la cuenta atrás.
+          Para OBS: añade una fuente de navegador con <code id="url-obs">?directo=tucanal</code>.</p>
+        </form>
+      </details>
     </section>
 
     <!-- Partida -->
@@ -51,6 +64,19 @@
         </button>
       </div>
 
+      <div class="votacion" id="votacion" hidden>
+        <div class="barras">
+          <div class="barra barra-gta"><span id="barra-gta"></span></div>
+          <div class="barra barra-real"><span id="barra-real"></span></div>
+        </div>
+        <p class="votos-info">
+          <span><b id="votos-gta">0</b> votos</span>
+          <span class="reloj" id="reloj">20</span>
+          <span><b id="votos-real">0</b> votos</span>
+        </p>
+        <p class="ayuda">Escribe <b>!1</b> para GTA o <b>!2</b> para la vida real</p>
+      </div>
+
       <div class="resultado" id="resultado" hidden>
         <p class="veredicto" id="veredicto"></p>
         <p class="dato" id="dato"></p>
@@ -71,11 +97,16 @@
       </div>
       <p class="aviso-copia" id="aviso-copia" hidden>¡Copiado! Pégalo donde quieras.</p>
 
+      <div class="top-chat" id="top-chat" hidden>
+        <h3>🏆 Top del chat</h3>
+        <ol id="lista-top"></ol>
+      </div>
+
       <div class="ctas" id="ctas">
         <a class="cta cta-video" id="cta-video" target="_blank" rel="noopener" hidden></a>
         <a class="cta cta-yt" id="cta-yt" target="_blank" rel="noopener" hidden>▶ Más GTA contra la realidad en el canal</a>
-        <a class="cta cta-ig" id="cta-ig" target="_blank" rel="noopener sponsored" hidden>🎮 Reserva GTA6 más barato en Instant Gaming</a>
-        <a class="cta cta-dc" id="cta-dc" target="_blank" rel="noopener" hidden>💬 Reta a la comunidad en Discord</a>
+        <a class="cta cta-ig" id="cta-ig" target="_blank" rel="noopener sponsored" hidden>🎮 GTA y tus juegos más baratos en Instant Gaming</a>
+        <a class="cta cta-dc" id="cta-dc" target="_blank" rel="noopener" hidden>💬 Reta a Double City en Discord</a>
       </div>
     </section>
   </main>
@@ -86,5 +117,6 @@
 
   <script src="config.js"></script>
   <script src="juego.js"></script>
+  <script src="directo.js"></script>
 </body>
 </html>

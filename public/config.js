@@ -2,9 +2,12 @@
 // Deja un valor en "" para que su botón no aparezca.
 window.CONFIG = {
   youtube: "https://www.youtube.com/@DoublelagGTA6",
-  discord: "",        // invitación de Double City, p. ej. https://discord.gg/xxxx
-  instantGaming: "",  // enlace de afiliado de Instant Gaming a GTA6
+  discord: "https://discord.gg/4Eucs5dQz4",                     // Double City
+  instantGaming: "https://www.instant-gaming.com/?igr=Doublelag", // afiliado
   // Vídeo que se recomienda al terminar la partida.
   videoFinal: { titulo: "", url: "" },
   vidas: 3,
+  // Modo directo: segundos para votar y para pasar a la siguiente ronda.
+  segundosVoto: 20,
+  segundosAvance: 8,
 };
