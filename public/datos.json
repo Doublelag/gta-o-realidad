@@ -1,0 +1,5 @@
+[
+  {"id":"prueba1","cat":"velocidad","unidad":"km/h","pregunta":"¿Cuál corre más?","gta":{"nombre":"PRUEBA coche A","juego":"GTA V","valor":200},"real":{"nombre":"PRUEBA coche B","valor":300},"dato":"Dato de prueba, se sustituye por los verificados."},
+  {"id":"prueba2","cat":"precio","unidad":"USD","pregunta":"¿Cuál cuesta más?","gta":{"nombre":"PRUEBA avión A","juego":"GTA V","valor":2500000},"real":{"nombre":"PRUEBA avión B","valor":900000},"dato":"Dato de prueba.","video":"https://www.youtube.com/@DoublelagGTA6"},
+  {"id":"prueba3","cat":"tamano","unidad":"m","pregunta":"¿Cuál es más alto?","gta":{"nombre":"PRUEBA torre A","juego":"GTA V","valor":250},"real":{"nombre":"PRUEBA torre B","valor":310},"dato":"Dato de prueba."}
+]

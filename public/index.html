@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>¿GTA o Realidad?</title>
+  <meta name="description" content="¿Corre más el coche de GTA o el real? Adivina cuál es mayor y mantén la racha. Un juego de Doublelag.">
+  <meta property="og:title" content="¿GTA o Realidad? — ¿Cuánta racha aguantas?">
+  <meta property="og:description" content="Coches, precios y edificios de GTA contra la vida real. Adivina cuál gana.">
+  <meta name="theme-color" content="#14071f">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sol" aria-hidden="true"></div>
+
+  <main id="app">
+    <!-- Portada -->
+    <section id="portada" class="pantalla activa">
+      <p class="etiqueta">Un juego de Doublelag</p>
+      <h1 class="titulo">¿GTA <span class="o">o</span> Realidad?</h1>
+      <p class="sub">Coches, precios y edificios de GTA contra la vida real.<br>Elige cuál es mayor. Tienes <b id="vidas-portada">3</b> vidas.</p>
+      <button id="btn-jugar" class="btn btn-principal">Jugar</button>
+      <p class="record" id="record-portada"></p>
+    </section>
+
+    <!-- Partida -->
+    <section id="partida" class="pantalla">
+      <header class="marcador">
+        <span id="vidas" class="vidas" aria-label="Vidas"></span>
+        <span class="racha">Racha <b id="puntos">0</b></span>
+      </header>
+
+      <p class="categoria" id="categoria"></p>
+      <h2 class="pregunta" id="pregunta"></h2>
+
+      <div class="duelo">
+        <button class="carta carta-gta" id="carta-gta">
+          <span class="origen" id="gta-juego">GTA V</span>
+          <span class="nombre" id="gta-nombre"></span>
+          <span class="valor" id="gta-valor">?</span>
+        </button>
+        <span class="vs">VS</span>
+        <button class="carta carta-real" id="carta-real">
+          <span class="origen">Vida real</span>
+          <span class="nombre" id="real-nombre"></span>
+          <span class="valor" id="real-valor">?</span>
+        </button>
+      </div>
+
+      <div class="resultado" id="resultado" hidden>
+        <p class="veredicto" id="veredicto"></p>
+        <p class="dato" id="dato"></p>
+        <a class="enlace-video" id="enlace-video" target="_blank" rel="noopener" hidden>🎥 Lo explico en este vídeo</a>
+        <button id="btn-siguiente" class="btn btn-principal">Siguiente</button>
+      </div>
+    </section>
+
+    <!-- Final -->
+    <section id="final" class="pantalla">
+      <p class="etiqueta" id="final-motivo">Fin de la partida</p>
+      <h2 class="titulo pequeno">Racha de <span id="final-puntos">0</span></h2>
+      <p class="record" id="final-record"></p>
+      <p class="rejilla" id="rejilla"></p>
+      <div class="botones">
+        <button id="btn-compartir" class="btn btn-principal">Compartir racha</button>
+        <button id="btn-otra" class="btn">Otra partida</button>
+      </div>
+      <p class="aviso-copia" id="aviso-copia" hidden>¡Copiado! Pégalo donde quieras.</p>
+
+      <div class="ctas" id="ctas">
+        <a class="cta cta-video" id="cta-video" target="_blank" rel="noopener" hidden></a>
+        <a class="cta cta-yt" id="cta-yt" target="_blank" rel="noopener" hidden>▶ Más GTA contra la realidad en el canal</a>
+        <a class="cta cta-ig" id="cta-ig" target="_blank" rel="noopener sponsored" hidden>🎮 Reserva GTA6 más barato en Instant Gaming</a>
+        <a class="cta cta-dc" id="cta-dc" target="_blank" rel="noopener" hidden>💬 Reta a la comunidad en Discord</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    Proyecto fan de <a href="https://www.youtube.com/@DoublelagGTA6" target="_blank" rel="noopener">Doublelag</a>. Sin relación con Rockstar Games ni Take-Two.
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="juego.js"></script>
+</body>
+</html>
