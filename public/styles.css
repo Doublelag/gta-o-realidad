@@ -328,3 +328,33 @@ body {
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* Publicidad del patrocinador (Instant Gaming).
+   Cada hueco nace oculto y banner-ig.js lo enciende solo si el banner llega
+   de verdad. Su script se queda con el div de dentro y le quita la clase, asi
+   que el redondeo y el recorte van en el bloque, que ese no lo toca nadie. */
+.pub { display: none; max-width: 480px; margin: 30px auto 0; text-align: left; }
+.pub.pub-ok { display: block; }
+.pub-et {
+  font-size: 11px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--suave);
+  opacity: .6;
+  margin-bottom: 8px;
+}
+.pub-ig, .pub > div:not(.pub-et) {
+  border-radius: 14px;
+  overflow: hidden;
+  line-height: 0;
+}
+.pub img, .pub iframe { display: block; max-width: 100%; }
+.pagina .pub { max-width: none; margin-top: 36px; }
+
+/* Cabecera, encima del titular, como el banner de arriba de la prensa.
+   Solo de tablet para arriba: en un movil son 240 px de anuncio tapando el
+   titular, y estas paginas viven de lo que las encuentre Google. */
+.pagina .pub.pub-cabecera { margin: 18px 0 0; }
+@media (max-width: 899px) {
+  .pagina .pub.pub-cabecera { display: none; }
+}

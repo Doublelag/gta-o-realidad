@@ -18,6 +18,29 @@ BASE = "https://gta-o-realidad.comparador-hosting.workers.dev"
 RAIZ = Path(__file__).parent / "public"
 SALIDA = RAIZ / "comparacion"
 
+# Huecos del patrocinador. Los mismos sitios que usa la prensa de videojuegos:
+# uno arriba del titular y otro dentro del contenido. Los dos son anchos a
+# proposito: por debajo de unos 400 px su banner cambia a una version sin boton
+# (clase ig-size-400), asi que un riel lateral estrecho seria un anuncio mudo.
+# Nacen ocultos y solo se encienden si el banner carga (lo decide banner-ig.js).
+#
+# Van en las paginas de comparacion porque son las que recibe Google: alguien
+# que busca "cuanto corre el coche de GTA" es exactamente quien puede querer
+# el juego barato.
+def hueco(extra=""):
+    return """
+    <aside class="pub %s">
+      <p class="pub-et">Publicidad</p>
+      <div class="pub-ig"></div>
+    </aside>""" % extra
+
+
+PUBLI = hueco()
+PUBLI_ARRIBA = hueco("pub-cabecera")
+
+PUBLI_JS = """  <script src="/banner-ig.js"></script>
+  <script src="https://www.instant-gaming.com/api/banner/partner/loader.js" defer></script>"""
+
 MEDIDA = {"velocidad": "velocidad", "precio": "precio", "tamano": "tamaño", "otro": "dato"}
 VERBO = {  # (pregunta con los dos nombres, ganador, adjetivo)
     "velocidad": ("¿Corre más {a} o {b}?", "corre más", "más rápido"),
@@ -113,6 +136,7 @@ def pagina(d, relacionados):
   <div class="sol" aria-hidden="true"></div>
   <main id="app" class="pagina">
     <nav class="migas"><a href="/">¿GTA o Realidad?</a> › <a href="/comparacion/">Comparaciones</a></nav>
+{PUBLI_ARRIBA}
     <p class="categoria">{escape(MEDIDA[d['cat']].capitalize())}</p>
     <h1 class="pregunta">{escape(pregunta)}</h1>
     <p class="sub">Piénsalo antes de mirar. Luego pon a prueba tu racha con el resto de datos.</p>
@@ -140,6 +164,7 @@ def pagina(d, relacionados):
       <a class="cta cta-jugar" href="/">🎮 Jugar a ¿GTA o Realidad? ¿Cuánta racha aguantas?</a>
       {video}
     </div>
+{PUBLI}
 
     <section class="bloque">
       <h2>Fuentes</h2>
@@ -154,6 +179,7 @@ def pagina(d, relacionados):
   <footer class="pie">
     Proyecto fan de <a href="https://www.youtube.com/@DoublelagGTA6" target="_blank" rel="noopener">Doublelag</a>. Sin relación con Rockstar Games ni Take-Two.
   </footer>
+{PUBLI_JS}
 </body>
 </html>
 """
@@ -191,13 +217,16 @@ def indice(datos):
   <div class="sol" aria-hidden="true"></div>
   <main id="app" class="pagina">
     <nav class="migas"><a href="/">¿GTA o Realidad?</a> › Comparaciones</nav>
+{PUBLI_ARRIBA}
     <h1 class="pregunta">GTA vs la vida real</h1>
     <p class="sub">{len(datos)} comparaciones con sus fuentes. ¿Te las sabes? <a href="/">Juega y compruébalo</a>.</p>
     {secciones}
+{PUBLI}
   </main>
   <footer class="pie">
     Proyecto fan de <a href="https://www.youtube.com/@DoublelagGTA6" target="_blank" rel="noopener">Doublelag</a>. Sin relación con Rockstar Games ni Take-Two.
   </footer>
+{PUBLI_JS}
 </body>
 </html>
 """
