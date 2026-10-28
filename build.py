@@ -65,6 +65,11 @@ def formatear(valor, unidad):
     return f"${n}" if unidad == "USD" else f"{n} {unidad}"
 
 
+def sin_protocolo(url):
+    """Texto visible de una fuente: la URL sin «https://» ni «www.»."""
+    return re.sub(r"^https?://(www\.)?", "", url)
+
+
 def slug_de(d):
     return f"{slug(d['gta']['nombre'])}-gta-vs-{slug(d['real']['nombre'])}-{slug(MEDIDA[d['cat']])}"
 
@@ -103,7 +108,7 @@ def pagina(d, relacionados):
                  f'🎥 {escape(d.get("videoTitulo") or "Lo explico en este vídeo")}</a>')
 
     fuentes = "".join(
-        f'<li><a href="{escape(f)}" target="_blank" rel="noopener nofollow">{escape(re.sub(r"^https?://(www\\.)?", "", f)[:70])}</a></li>'
+        f'<li><a href="{escape(f)}" target="_blank" rel="noopener nofollow">{escape(sin_protocolo(f)[:70])}</a></li>'
         for f in d.get("fuentes", [])
     )
     rel = "".join(
